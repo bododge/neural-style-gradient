@@ -15,4 +15,4 @@ Dependencies for the script are exactly the same as neural-style because it is t
 
 The idea is to find the settings you would like to use and keep track of them by naming the files with the actual parameters used in that image.
 
-*tip If you want to use this to create with the VGG 19 model, just edit out the parts that refer to the NIN Model, I may add a seperate .sh file in the future, but for now this is an easy edit if you read the command and edit out those flags.
+*If you want to use this to create with the VGG 19 model, just edit out the parts that refer to the NIN Model, I may add a seperate .sh file in the future, but for now this is an easy edit if you read the command and edit out those flags.
