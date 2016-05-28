@@ -90,7 +90,7 @@ do
 		CMDone="th $userpath$neuralstlefile
 				-style_image $stylesource 
 				-content_image $userpath$contentsource
-				-output_image _animation/$imagename$sep$thisrun$sep$q$sep$sw$styleweight$sep$cw$contentweight$sep$tw$tvweight.jpg 							
+				-output_image _gradient/$imagename$sep$thisrun$sep$q$sep$sw$styleweight$sep$cw$contentweight$sep$tw$tvweight.jpg 							
 				-style_image $stylesource 
 				-model_file $userpath$modelfile 
 				-proto_file $userpath$protofile
