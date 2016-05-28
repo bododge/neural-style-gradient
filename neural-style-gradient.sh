@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-#user paths to neural style folder scripts
+#user path to neural style folder scripts
 userpath="/Users/yourusername/Documents/Deepstyler/neural-style/"
 
 #This steps prevents the need to change directory before running script when you open bash. You must change the directory below to the same as above
