@@ -1,6 +1,8 @@
 # neural-style-gradient
 
-This bash scripts creates a gradient of style transfer images using jcjohnson's neural-style script. Dependencies for the script are exactly the same as neural-style, with the addition of the NIN model. You will need to download the NIN model and proto files to use this example. 
+This bash scripts creates a gradient of style transfer images using jcjohnson's neural-style script. Dependencies for the script are exactly the same as neural-style, with the addition of the NIN model. You can get the details on the model from [BVLC Caffe ModelZoo](https://github.com/BVLC/caffe/wiki/Model-Zoo) and can download the files from [NIN-Imagenet Download Link](https://drive.google.com/folderview?id=0B0IedYUunOQINEFtUi1QNWVhVVU&usp=drive_web)
+
+
 <br>
 <a href="http://imgur.com/vFiTXEn"><img src="http://i.imgur.com/vFiTXEn.gif" title="source: imgur.com" /></a>
 
