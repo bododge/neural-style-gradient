@@ -10,4 +10,4 @@ This bash scripts creates a gradient of style transfer images using jcjohnson's 
 
 The idea is to find the settings you would like to use and actually keep track of them by naming the files with the actual parameters used in that file
 
-*tip If you want to use this to create with the VGG 19 model, just edit out the parts that refer to the NIN Model, I may add that in the future, but for now this is an easy edit if you read the script.
+*tip If you want to use this to create with the VGG 19 model, just edit out the parts that refer to the NIN Model, I may add a seperate .sh file in the future, but for now this is an easy edit if you read the script.
