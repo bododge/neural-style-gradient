@@ -8,7 +8,7 @@ Dependencies for the script are exactly the same as neural-style because it is t
 
 <br>
 <a href="http://imgur.com/vFiTXEn"><img src="http://i.imgur.com/vFiTXEn.gif" title="source: imgur.com" /></a>
-
+<a href="http://imgur.com/h0Hse0r"><img src="http://i.imgur.com/h0Hse0r.gif" title="source: imgur.com" /></a>
 *Note that this script does not create animated .gifs for you, this is just a visual of the sequence of images that can be easily created using the script.
 
 <a href="http://imgur.com/M4uMqfO"><img src="http://i.imgur.com/M4uMqfO.png" title="source: imgur.com" /></a>
