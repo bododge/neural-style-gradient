@@ -40,8 +40,8 @@ $ mkdir -p $project/$contentsource/$stylesource
 neuralstlefile="neural_style.lua"
 modelfile="models/nin_imagenet_conv.caffemodel"
 protofile="models/train_val.prototxt"
-contentlayers="relu0,relu2,relu3,relu6"
-stylelayers="relu0,relu2,relu3,relu5"
+contentlayers="relu0,relu3,relu7,relu12"
+stylelayers="relu0,relu3,relu7,relu12"
 
 
 # noise fractal seed
