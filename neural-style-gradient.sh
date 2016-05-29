@@ -16,8 +16,8 @@ contentsource="content.jpg"
 #image size, optimizer, save/print frequency & quality adam or lbfgs, adam is faster, lbfgs is higher quality 
 printiter="10"
 saveiter="0"
-numiter="400"
-imagesize="500"
+numiter="900"
+imagesize="900"
 optimize="adam"
 
 ############################
@@ -32,6 +32,12 @@ stylescale="1.3"
 #This will set the name of the directory created or used for this project
 project="_gradient"
 
+############################
+#Creates Directories for this project
+$ mkdir -p $project/$contentsource/$stylesource
+
+############################
+#location of scripts and models
 neuralstlefile="neural_style.lua"
 modelfile="models/nin_imagenet_conv.caffemodel"
 protofile="models/train_val.prototxt"
@@ -64,8 +70,7 @@ tw="tw_"
 #seperators
 sep="_"
 
-#Creates Directories for this project
-$ mkdir -p $project/$contentsource/$stylesource
+
 
 #End Variable edits, Command loop(s) below
 
@@ -124,6 +129,3 @@ do
 done
 done
 done
-
-
-
