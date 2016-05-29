@@ -1,10 +1,36 @@
 #!/usr/bin/env bash
+#th import cudnn
 
-#user path to neural style folder scripts
+#user paths to neural style folder scripts
 userpath="/Users/yourusername/Documents/Deepstyler/neural-style/"
 
 #This steps prevents the need to change directory before running script when you open bash. You must change the directory below to the same as above
 cd /Users/yourusername/Documents/Deepstyler/neural-style/
+
+############################
+#style & content source
+stylesource="kandinsky.jpg"
+contentsource="content.jpg"
+
+############################
+#image size, optimizer, save/print frequency & quality adam or lbfgs, adam is faster, lbfgs is higher quality 
+printiter="10"
+saveiter="0"
+numiter="400"
+imagesize="500"
+optimize="adam"
+
+############################
+#style and content weighting
+#These are the starting points for your style gradient!
+styleweight="3000"
+contentweight="140"
+tvweight=".0004"
+stylescale="1.3"
+
+############################
+#This will set the name of the directory created or used for this project
+project="_gradient"
 
 neuralstlefile="neural_style.lua"
 modelfile="models/nin_imagenet_conv.caffemodel"
@@ -12,8 +38,6 @@ protofile="models/train_val.prototxt"
 contentlayers="relu0,relu2,relu3,relu6"
 stylelayers="relu0,relu2,relu3,relu5"
 
-#prepaint blending
-alpher=".86"
 
 # noise fractal seed
 seedit="123"
@@ -21,28 +45,6 @@ seedit="123"
 # backend opencl or clnn cudnn, nn or cpu - nn works best on my machine you might need a different backend
 backend="nn"
 g_pu="0"
-
-
-#image size, optimizer, save/print frequency & quality adam or lbfgs, adam is faster, lbfgs is higher quality 
-printiter="10"
-saveiter="0"
-numiter="400"
-imagesize="500"
-optimize="adam
-"
-
-#style and content weighting
-#stylescale has huge impact on memory
-#These are the starting points for your style gradient!
-
-styleweight="3000"
-contentweight="140"
-tvweight=".0004"
-stylescale="1.3"
-
-#style source
-stylesource="starry.jpg"
-contentsource="content.jpg"
 
 #initialization method (image or random)
 initialize="random"
@@ -61,6 +63,9 @@ sc="sc_"
 tw="tw_"
 #seperators
 sep="_"
+
+#Creates Directories for this project
+$ mkdir -p $project/$contentsource/$stylesource
 
 #End Variable edits, Command loop(s) below
 
@@ -90,7 +95,7 @@ do
 		CMDone="th $userpath$neuralstlefile
 				-style_image $stylesource 
 				-content_image $userpath$contentsource
-				-output_image _gradient/$imagename$sep$thisrun$sep$q$sep$sw$styleweight$sep$cw$contentweight$sep$tw$tvweight.jpg 							
+				-output_image $project/$contentsource/$stylesource/$imagename$sep$thisrun$sep$q$sep$sw$styleweight$sep$cw$contentweight$sep$tw$tvweight.jpg 							
 				-style_image $stylesource 
 				-model_file $userpath$modelfile 
 				-proto_file $userpath$protofile
