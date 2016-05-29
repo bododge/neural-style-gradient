@@ -2,10 +2,10 @@
 #th import cudnn
 
 #user paths to neural style folder scripts
-userpath="/Users/yourusername/Documents/Deepstyler/neural-style/"
+userpath="/Users/yourusername/Documents/neural-style/"
 
 #This steps prevents the need to change directory before running script when you open bash. You must change the directory below to the same as above
-cd /Users/yourusername/Documents/Deepstyler/neural-style/
+cd /Users/yourusername/Documents/neural-style/
 
 ############################
 #style & content source
