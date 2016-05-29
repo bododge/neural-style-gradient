@@ -33,7 +33,7 @@ project="_gradient"
 
 ############################
 #Creates Directories for this project
-$ mkdir -p $project/$contentsource/$stylesource
+mkdir -p $project/$contentsource/$stylesource
 
 ############################
 #location of scripts and models
