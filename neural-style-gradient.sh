@@ -8,7 +8,7 @@ cd /Users/yourusername/Documents/neural-style/
 
 ############################
 #style & content source
-stylesource="kandinsky.jpg"
+stylesource="painting.jpg"
 contentsource="content.jpg"
 
 ############################
