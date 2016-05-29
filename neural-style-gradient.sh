@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-#th import cudnn
 
 #user paths to neural style folder scripts
 userpath="/Users/yourusername/Documents/neural-style/"
