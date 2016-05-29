@@ -13,7 +13,7 @@ contentsource="content.jpg"
 
 ############################
 #image size, optimizer, save/print frequency & quality adam or lbfgs, adam is faster, lbfgs is higher quality 
-printiter="10"
+printiter="20"
 saveiter="0"
 numiter="900"
 imagesize="900"
